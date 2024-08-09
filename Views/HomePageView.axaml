@@ -1,0 +1,118 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:CompileBindings="False"
+             x:Class="QuizApplikation.Views.HomePageView">
+
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="7*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="1*"/>
+		</Grid.RowDefinitions>
+
+		<ListBox Grid.Column="1" 
+				 Grid.Row="2" 
+				 Grid.ColumnSpan="1" 
+				 Grid.RowSpan="1" 
+				 Background="#7000"></ListBox>
+
+		<TextBlock Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   Grid.Row="0"
+				   FontSize="65"
+				   FontWeight="ExtraBold"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center"
+				   Foreground="#6666"
+				   >Quiz Applikation</TextBlock>
+
+		<TextBlock Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   Grid.Row="0"
+				   FontSize="67"
+				   FontWeight="ExtraBold"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center"
+				   Foreground="#0a21bf"
+				   >Quiz Applikation</TextBlock>
+
+
+		<TextBlock Grid.Column="1"
+				   Grid.Row="2"
+				   Margin="0 5"
+				   xml:space="preserve"
+				   Foreground="#b4b4be"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"
+				   FontWeight="ExtraBold"
+				   >Velkommen til Shauqille's Quiz Applikation!
+
+Har du lyst til at teste dine viden og quizze med vennerne? 
+
+Mit quizprogram giver dig mulighed for at 
+udfordre dine venner i en række spændende kategorier. 
+
+Tryk på "Vælg kategori" for at vælge din foretrukne quizkategori og vis, 
+hvor godt du klarer dig!
+
+Hvis du har brug for at kende reglerne, 
+er de kun et tryk væk! Tryk på "Regler" for at få en detaljeret 
+beskrivelse af, hvordan spillet fungerer.
+
+God fornøjelse og held og lykke med at quizze!</TextBlock>
+
+
+
+		<Button Grid.Column="3"
+				Grid.Row="2"
+				VerticalAlignment="Top"
+				HorizontalAlignment="Stretch"
+				Command="{Binding KategoriBtn}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Vælg Kategori</Button>
+
+		<Button Grid.Column="3"
+				Grid.Row="2"
+				VerticalAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Command="{Binding ReglerBtn}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Regler</Button>
+
+		<Button Grid.Column="3"
+				Grid.Row="3"
+				VerticalAlignment="Center"
+				HorizontalAlignment="Stretch"
+				Command="{Binding SignOutBtn}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Log Ud</Button>
+	</Grid>
+</UserControl>

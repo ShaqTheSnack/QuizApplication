@@ -1,0 +1,87 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:CompileBindings="False"
+             x:Class="QuizApplikation.Views.RulesView">
+
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="10000*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="1*"/>
+		</Grid.RowDefinitions>
+
+		<ListBox Grid.Column="1"
+                 Grid.Row="2"
+                 Grid.ColumnSpan="1"
+                 Grid.RowSpan="1"
+                 Background="#7000"></ListBox>
+
+		<TextBlock Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="0"
+                   FontSize="62"
+                   FontWeight="ExtraBold"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="#6666">Regler</TextBlock>
+
+		<TextBlock Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="0"
+                   FontSize="65"
+                   FontWeight="ExtraBold"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="#0a21bf">Regler</TextBlock>
+
+
+		<TextBlock Grid.Column="1"
+                   Grid.Row="2"
+                   Margin="0 5"
+                   xml:space="preserve"
+                   Foreground="#b4b4be"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontWeight="ExtraBold"
+                   FontSize="15">Sådan spiller du:
+
+            Formål: Besvar så mange spørgsmål korrekt som muligt for at få flest point.
+
+            Valg af kategori: Vælg den kategori, du er mest interesseret i, og spil quizzen.
+
+            Svar på spørgsmål: Vælg det rigtige svar blandt de muligheder, der gives.
+
+            Point: Du får point for hvert rigtigt svar. Sværere spørgsmål kan give flere point.
+
+            Tid: Nogle quizzer har en tidsbegrænsning. Sørg for at svare inden for den angivne tid.
+
+            Resultater: Når spillet er færdigt, kan du se, hvor mange rigtige svar du fik, 
+            dine point og din placering i forhold til andre spillere.
+
+            Hvis du vil læse reglerne igen, kan du trykke på "Regler".
+        </TextBlock>
+
+		<Button Grid.Column="0"
+                Grid.Row="3"
+                Grid.ColumnSpan="4"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom"
+                Command="{Binding BackBtn}"
+                Background="#0a21bf"
+                Foreground="#b4b4be"
+                FontWeight="ExtraBold"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="17">Tilbage</Button>
+	</Grid>
+</UserControl>

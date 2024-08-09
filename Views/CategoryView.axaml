@@ -1,0 +1,200 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:CompileBindings="False"
+             x:Class="QuizApplikation.Views.CategoryView">
+
+	<Grid ShowGridLines="False">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="1*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   Grid.Row="0"
+				   FontSize="65"
+				   FontWeight="ExtraBold"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center"
+				   Foreground="#6666"
+				   >Vælg Kategori</TextBlock>
+		
+		<TextBlock Grid.Column="1"
+				   Grid.ColumnSpan="3"
+				   Grid.Row="0"
+				   FontSize="66"
+				   FontWeight="ExtraBold"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center"
+				   Foreground="#0a21bf"
+				   >Vælg Kategori</TextBlock>
+
+		<Button Grid.Column="0"
+				Grid.Row="2"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding HistoryCategory}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Historie</Button>
+
+		<Button Grid.Column="1"
+				Grid.Row="2"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding ScienceCategory}"
+				Background="#0a21bf"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Videnskab</Button>
+
+		<Button Grid.Column="2"
+				Grid.Row="2"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding MoviesCategory}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Film</Button>
+
+		<Button Grid.Column="3"
+				Grid.Row="2"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding GeographyCategory}"
+				Background="#0a21bf"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Geografi</Button>
+
+		<Button Grid.Column="4"
+				Grid.Row="2"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding SportsCategory}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Sport</Button>
+		
+		<Button Grid.Column="0"
+				Grid.Row="3"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding ProgrammingCategory}"
+				Background="#0a21bf"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Programmering</Button>
+
+		<Button Grid.Column="1"
+				Grid.Row="3"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding DatabaseCategory}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Database</Button>
+
+		<Button Grid.Column="2"
+				Grid.Row="3"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding ClientSideCategory}"
+				Background="#0a21bf"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>ClientSide</Button>
+
+		<Button Grid.Column="3"
+				Grid.Row="3"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding NetworkCategory}"
+				Background="#050a44"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Netværk</Button>
+
+		<Button Grid.Column="4"
+				Grid.Row="3"
+				Grid.ColumnSpan="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding GUICategory}"
+				Background="#0a21bf"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>GUI</Button>		
+
+		<Button Grid.Column="0"
+				Grid.Row="6"
+				Grid.ColumnSpan="5"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Bottom"
+				Command="{Binding BackBtn}"
+				Background="#0a21bf"
+				Foreground="#b4b4be"
+				FontWeight="ExtraBold"
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				FontSize="17"
+				>Tilbage</Button>
+	</Grid>
+</UserControl>
